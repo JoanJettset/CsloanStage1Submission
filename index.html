@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Stage 2 Part 2</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+
+<head>
+  <title>Carrie Sloan's Notes</title>
+  <link rel="stylesheet" href="carrie-style.css">
+  </head>
+
+<body>
+  <div>
+    <h1> Introduction to Programming</h1>
+  </div>
+    <div class="lesson">
+     <h2><span class="center">Table of Contents</span></h2>
+    <!-- I didn't plan this out for the rest of the course material and may change the structure later to make it work with additional content -->
+     <div class="TOC-box">
+      <div class="TOC">
+       <a href="#lesson-1"><b>The Basics of the Web and HTML</b></a> 
+        <ul>
+          <li><a href="#lesson-1-1">HTML & How the Web Works</a></li>
+          <li><a href="#lesson-1-2">HTML Markup Basics</a></li>
+          <li><a href="#lesson-1-3">Handy Tips</a></li>
+         </ul>
+      </div>
+     <div class="TOC">
+       <a href="#lesson-2"><b>Creating a Structured Document</b></a>
+         <ul>
+          <li><a href="#lesson-2-1">HTML, CSS, and JavaScript</a></li>
+          <li><a href="#lesson-2-2">HTML's Tree-like Structure  </a></li>
+          <li><a href="#lesson-2-3">Text Editor Options</a></li>
+         </ul>
+       </div>
+        <div class="TOC">
+          <a href="#lesson-3"><b>CSS: Adding Structure and Style </b></a>
+          <ul>
+           <li><a href="#lesson-3-1">Key Features of CSS</a></li>
+           <li><a href="#lesson-3-2">Grid and Box Structure
+            </a></li>
+          <li><a href="#lesson-3-3">Code, Test, Refine</a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="TOC-box">
+       <div class="TOC"> 
+        <a href= "#lesson-4"><b>Telling Computers What to Do</b></a>
+         <ul>
+          <li>
+          <a href="#lesson-4-1">Programming Basics</a>
+          </li>
+          <li>
+            <a href="#lesson-4-2">Python: Variables</a>
+          </li>
+          <li>
+            <a href="#lesson-4-3">Python: Strings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="TOC"> <!-- placeholder -->
+      </div>
+
+      <div class="TOC"><!-- placeholder -->
+      </div>
+    </div>
+   </div>
+   <div class="lesson">
+      <h2 id="lesson-1">HTML and the Web</h2>
+     <div class= "concept">
+       <div class= "concept-title" id="lesson-1-1">
+       HTML is an Important Part of How the Internet Works
+       </div>
+    <div class = "concept-description">
+       <p>
+         HTML is <span class = "italic">Hyper Text Markup Language.</span> It is the basis of most of the documents on the web. HTML documents contain text content, which is text you see when you are looking at the web page, and markup, which is the instructions for how the text should be displayed on the webpage.
+       </p>
+       <p>
+         When you use your computer to go to a website, your computer uses something called Hyptertext Transfer Protocol or HTTP to send requests to servers. These servers respond by finding the appropriate HTML documents, and you see the web page you requested when you clicked a link or entered a URL. Your browser reads and interprets the HTML and displays the web page. 
+       </p>
+     </div>
+    </div>
+   <div class= "concept">
+   <div class= "concept-title" id="lesson-1-2">
+         HTML Markup Basics: Tags, Elements, and Attributes
+   </div>
+   <div class= "concept-description">
+    <p>
+     <span class = "bold">Tags:</span>
+      These are basically instructions inserted into the HTML document that give directions on how it should be formatted. Usually these instructions  or elements have both an an opening or closing tag. The exception is void tags, which have no content and so don’t need a closing tag. If a tag is not void, it needs a closing tag, or whatever instruction the tag gives won't stop. 
+     </p>
+      <p>
+       <span class = "bold">Elements:</span> 
+      Individual components of HMTL documents.  Elements are either inline or block.  Block elements have a sort of “box” around them that allows you to write code with instructions on style. For example, you can set height and width.
+     </p>
+      <span class = "bold">Attributes:</span> These are properties or values of an HTML element that modify it. 
+      For example, "href" is the attribute that tells the browswer that the text content of the element should be <a href = "http://en.wikipedia.org/wiki/Website" target="blank"> a live link to a website. </a> 
+    </div>
+   </div>
+    <div class = "concept">
+     <div class = "concept-title" id="lesson-1-3">
+   <span class= "bold">Handy Tips!</span>
+   </div>
+    <div class = "concept-description">
+     <p>
+      <span class= "bold">Computers are Stupid:</span>
+      You use HTML to tell the computer what to do. If you aren’t exact with your syntax, the computer will get confused about what you're telling it to do. Basically, your code won’t work.
+     </p>
+      <p>
+      <span class= "bold">You don’t have to memorize everything now:</span>
+     Right now, it’s more important to understand the underlying concepts than to memorize every tag, as you can always look up specific tags if you understand the concept behind what you’re trying to do.
+    </p>
+   </div>
+   </div>
+  </div>
+   <div class= "lesson" id="lesson-2">
+    <h2> <SPAN>Creating a Structured Document with HTML</SPAN></h2>
+  <!--i had bold tags on the h3 below originally but removed them because the styling on the h3 tag includes font weight bold -->
+
+  <div class= "concept">
+    <div class = "concept-title" id="lesson-2-1">   
+     HTML, CSS, and JavaScript Work Together on a Web Page
+   </div>
+  <div class="concept-description">
+   <p>
+     Like a house, a web page needs structure and style, and a way to make things inside the house work. In this metaphor, HTML is like the walls of a house- it provides structure. CSS provides style, such as the paint color of the walls. Java provides interactivity, like a garage door opener or a TV remote- it lets you change elements. 
+   </p>
+  </div>
+ </div>
+  <div class= "concept">
+  <div class = "concept-title" id="lesson-2-2">
+   HTML Has a Tree-like Structure and Everything is a Box
+  </div>
+  <div class= "concept-description">
+
+  <p>  Each HTML tag creates an element. These elements are like the branches of a tree. You can visualize this similarly to how you can visualize a family tree, with each offspring (element) creating a new branch. This tree-like structure is known as DOM- document object model.    
+  </p>
+
+  <!--I took out some div tags here because I decided to group this section together rather than have separate concept divs...not sure if that was a good move -->
+
+  <p>When you look at a web page's HTML, you see these nested elements as a series of boxes inside one another.
+    </p>
+  <p>When you're building your tree-like HTML structure, you can use DIV tags to define boxes. Later, you'll add style with CSS, so you want to 'label' these DIV tags for later styling. You do this by assigning class attributes- like labeling a moving box so that you know where its contents should go in the house. HTML tags can belong to multiple classes- just as you can label a box both "kitchen" and "fragile". Like labels on moving boxes, class names should be informative.
+    </p>
+  </div>
+</div>
+  <div class = "concept">
+    <div class = "concept-title" id="lesson-2-3">
+   Text Editors: You Have Options
+    </div>
+       <div class= "concept-description">
+  <p> Programmers have many text editor options available for writing code. For example:
+  </p>
+    <p> 
+      <a href="http.scratchpad.io/carrielurane" target="_blank">Scratchpad </a> is a simple, easy, and beginner friendly real-time editor for HTML and CSS. You can see the changes in your code, as they would appear on a webpage, immediately on a little screen. Scratchpad also has helpful features like an automatic adding of closing tags whenever you enter an opening tag. One downside: you can't share your code.
+        </p>
+            <!--I originally had an em tag in the paragraph below but decided to get more practice w/span -->
+          <p>
+           <a href="http://codepen.io/" target="_blank">
+            Codepen</a> adds Javascript, and makes it easy to share your code with a free account. It is <span class = "italic">slightly</span> slower than Scratchpad, and a bit less user-friendly for newbies, so as a beginner, you may want to edit your simple HTML and CSS in Scratchpad and then just copy it into Codepen to save it and share it. 
+      </p>
+      <p>
+            <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> is more powerful than Scratchpad and Codepen, and has a nice feature that lets you see your works as it would look as a webpage in a full size browser page. But it's difficult to share your code from Sublime Text and is the least new-user friendly.
+        </p>
+     </div>
+   </div>
+ </div>
+     <div class= "lesson" id="lesson-3">
+       <h2> <SPAN>Adding Structure and Style With CSS</SPAN></h2>
+    <div class= "concept">
+    <div class = "concept-title" id="lesson-3-1"> Key Features of CSS
+      </div>
+      <div class = "content-description">
+        <p>
+        <span class="bold">
+          CSS = "Cascading Style Sheets".</span> CSS is how you take your HTML and make it look like the design you want on your website. You can use it to add structure to the page - to arrange elements on the page the way you want. And you can use it to control how things look, everything from font type to color. You do this by applying rules to the various elements in your html.
+        </p>
+        <p>
+         <span class="bold"> Inheritance</span> is a key feature of CSS. It's a  mechanism by which rules or properties are applied not just to any one specific element but to its descedents as well. Descendent elements "inherit" CSS property values from the ancestor elements they're enclosed within.
+
+Not everything is inheritable. Text related properties are inherited, but box related properties are not. Text related properties include things like color, font family, line height and the like. Box related properties include things like background and border elements and margins.
+        </p>
+       <p>Inheritance allows you to <span class="bold"> avoid repetition</span>. This is important, because it saves you from having to write the same code over and over again, so it saves you time and effort and streamlines your code. But more importantly, it can prevent errors in your code if you decide to change something later. For example, if you've used CSS to avoid repetition, you won't get stuck having to hunt for every instance of the HTML code that you need to change, and (likely) missing something that will then mess up your page.
+       </p>        
+        <p> <span class="bold">Semantic tags:</span> Choose the right element for the purpose - your tags should describe what they are doing. For example, use "title" to describe a title and an H tag (H1, H2, H3) to describe a heading. The tag's element name is both the semantic meaning of the content and the default style rules applied to it.
+        </p>
+      </div>
+       </div>
+      <div class="concept">
+        <div class="concept-title" id="lesson-3-2"> Grid and Box Structure
+        </div>
+        <div class="concept-description">
+          <p>You can use CSS to create a <a href="https://css-tricks.com/snippets/css/complete-guide-grid">
+            grid</a> framework for your website. The grid is the framework or base on which all of your elements will be laid out in columns and rows. You want to build asystem that gives you flexibility to make various column designs and that follows the principles of <a href="#lesson-3-3-1"><span class="bold">responsive design.</span></a>
+          </p>
+          <p>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox"> Flexbox </a>is a module that you can use to efficiently lay out, align, and distribute elements on your pages, on a grid. You can use flexbox to divide your page into columns and rows and arrange them next to or on top of each other and to size them by using "containers". The "flex" references the fact that a flexbox container can alter its items' properties (like width and height) to fill the available space in the best way. This makes your pages looks its best on various types of devices and on various screen sizes. It can expand into available space or shrink. 
+          </p>
+        </div>
+       </div>
+     <div class="concept">
+       <div class="concept-title" id="lesson-3-3">Code, Test, Refine
+       </div>
+       <div class="concept-description">
+       <p>The process of developing code is known as <span class="bold"> Code, Test, Refine</span>.  When you start out, you first look for natural boxes in the design. Then look for repeated styles and semantic elements. Next, start writing your html. Then apply your style sheets, starting with the biggest aspects and moving to the smallest. As you go, test your code in various browsers and formats. Then start refining your code and fixing things. Repeat. 
+         </p>
+         <p>Tip: your browser's <span class="bold">Developer Tools</span> provides you with ways to experiment with and test your code in the browser and is an invaluable resource. You can also use it to see how other websites are doing things, and to play with other websites' code, to test your ideas.
+       </p>
+         <p> There are <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">CSS </a>and <a href="http://validator.w3.org/#validate_by_input" target="_blank">HTML</a> testing sites that can help you figure out if your code is at least valid. You should use them.
+           </p>
+         <p> The principal of <span class= "bold" id="lesson-3-3-1">Responsive Design</span> is about making your site work on various browsers and platforms. You want to make sure your site looks good on everything from a desk top with a big screen using Internet Explorer, to a smart phone using Chrome. For example, for size, you can use % instead of a fixed px so that elements on your page will scale up or down depending on the size of the screen. 
+         </p>
+       </div>
+       </div> 
+       </div>
+       <div class ="lesson" id="lesson-4">
+         <h2> <span>Telling Computers What To Do </span> </h2>
+         <div class = "concept">
+           <div class = "concept-title" id= "lesson-4-1"> Computers and Programming Basics
+           </div>
+           <div class= "concept-description">
+             <p> A <span class= "bold"> computer </span> is a machine that can be programmed into doing virtually any computational task you can think of, with the right program. A <span class= "bold"> computer program</span> is a precise sequence of steps given to the computer via written instructions, so that it will perform a specific <span class = "bold">computation</span>. <span class = "bold"> Computer science </span>is the solving of problems by breaking them into pieces and writing a step-by-step list of instructions in a <span class = "bold">programming language</span>.
+             </p>  
+             <p>
+              We need <span class = "bold">programming languages</span> to give instructions to computers because natural languages are too ambiguous and their grammar too imprecise. The grammar of programming languages is strict because the computer needs to be told exactly what to do with no ambiguity.
+             </p>
+             <p> <span class= "bold"> Code interpreters</span> are programs that translate a <span class = "bold"> high level language </span> into something the computer can understand. We input our code into the interpreter and instruct it to "run" our code, and it takes the code line by line and interprets it for the computer. 
+             </p>
+           </div>
+         </div>
+           <div class = "concept">
+           <div class = "concept-title" id= "lesson-4-2"> Python Basics:Variables
+           </div>
+           <div class = "concept-description"> 
+             <p>
+               <span class = "bold">Python</span> is the programming lanaguge we are using in this course. <!-- add something about expressions, strings, variables -->
+             </p>
+             <p> In Python, a<span class="bold"> variable
+              </span> is like a box you store information in, in that  you use variables to give names to values. 
+              You <span class="bold"> assign value </span> to a variable using the "=" sign, like this:</p>
+             <p>
+              <span class="code"> my_name = Carrie</span>
+             </p> 
+             <p>The above is an <span class="bold"> assignment statement</span>. Now that I've assigned the value "Carrie" to the variable "my_name", I can work with the variable. For example, if I write the following code:
+             </p>
+             <p><span class="code">print my_name</span>
+             </p>
+             It will print out <span class="code">Carrie</span>.
+             <p>
+                Variable names are case sensitive. If I later try to call the variable <span class="code">My_name</span>, it will not return "Carrie" (unless I also assign "Carrie" to <span class="code">My_name</span>.)
+             </p>
+             <p>
+             <span class="code">my_name = Carrie</span>  is different from <span class="code"> 2 + 2 = 4 </span>. 
+             </p>
+             <p> In <span class="code">my_name = Carrie </span>, the equals sign means "take the value of". In <span class="code"> 2 + 2 = 4 </span>, the equals sign means "is the same as". 
+             </p>
+
+             <p>Some ways variables are useful:</p>
+  <!-- need to figure out a way to make this list single spaced without changing the spacing in TOC lists...nothing seems to be working- <span style='font-size:8px'> can i use span style or some other span to change the way the line spacing works-->
+       <ul>
+       <li>*They give us a way to store important data.</li>
+       <li>*They give us a way to write readable code that the computer understands.</li>
+       <li>*They give us a way to change the value of something.</li>
+             </ul>
+             </div>
+           </div>
+             <div class = "concept">
+           <div class = "concept-title" id= "lesson-4-3"> Python Basics: Strings
+           </div>
+           <div class = "concept-description"> 
+             <p><span class="bold">Strings</span> are a sequence of characters surrounded by quotes. Quotes can be either single or double, as long as the string starts and ends with the same type of quote. 
+             </p>
+             <p><span class="code">"I am a string."
+             </span>  and 
+             <span class="code">'I am also a string.'</span>
+             </p> but
+             <p><span class="code">"I am not a valid string and if you try to print me you will get a syntax error message.'</span>
+             </p>
+             <p>Some things to keep in mind about strings:</p>
+             <ol>
+             <li> *You can assign a string to a variable, or you can just print a string. 
+             </li>
+             <li>*You can <span class="bold"> concantenate </span> strings by using the operator <b>+</b>. For example, you could print the string "My name is  " with the string "Carrie":
+             </li>
+             <li><span class="code">"My name is " + "Carrie" </span> 
+               </li>
+
+               <li>
+               and get 
+                 </li>
+                 <li><span class="code"> My name is Carrie</span>. (Note the extra space inside the string so that there's space between "My name is" and "Carrie" when it prints.)
+             </li>
+               <li>
+               *When working with numbers, remember that <span class="code"> 500 </span> is a number, while <span class="code"> "500"</span> is a string. So <span class="code"> 500 + 2</span> will print out as <span class="code">502</span> (Python will add the two numbers), while <span class="code"> "500"+"2" </span> will print out as <span class="code">5002 </span> (Python will concantenate the two strings).
+               </li>
+             </ol>
+           </div>
+  </div> 
+ </div>
+  <!-- ok- add a new lesson class here for the new content, telling cu what to do part 2-->
+</body>
+
+</body>
+
+</html>

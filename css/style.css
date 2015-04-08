@@ -1,0 +1,175 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing:border-box;
+  -box-sizing:border-box;
+}
+
+html {
+  min-height: 100%;
+ background:url('http://i.imgur.com/FRgbjLL.jpg') no-repeat center center;
+  background-size: cover;
+  /* this is a placeholder image. i wanted to figure out how to do this but right now don't have the right image for it*/
+  /*for polka dots background: white;
+background: radial-gradient(circle, darkcyan 10%, transparent 10%),
+radial-gradient(circle, darkcyan 10%,white 10%) 50px 50px;
+background-size:100px 100px;*/
+}
+  
+
+h1 {
+    text-align:center;
+    color: black;
+    font-family:TimesNewRoman;
+}
+
+body {
+  padding:  10px;
+	max-width: 1200px; /*changed this to 1024 from Andy's 2000px to see if it helped with things not all fitting on the screen. It looks a little funky now on my laptop but everyting on page fits on screen and it looked good on my smart phone. then adjusted it again to it looks better on larger screen. next step: queries?*/
+	margin: 0 auto; /* The 0 refers to the top and bottom margins and the "auto" automatically */
+	font-size: 1.4em;
+  font-family:Times;
+  line-height:44px;
+  
+}
+/*when I commented out the padding: 10px command below as instructed in lesson CSS, the margins around the text disappeared and everything looked cramped, = yuck*/
+
+.lesson {
+    background-color: #66CCFF;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    margin: 0px /*this takes away white space between sessions but also mergees the TOC to lesson*/
+}
+/*
+.TOC {
+  display: flex;
+  width: 33.3%;
+  margin:10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color:#FFFFFF;
+  color: black;  
+}
+  
+  .TOC-box {
+    display:flex;
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex; 
+    flex-direction: row;
+    flex-wrap: row-wrap;
+    /*justify-content: center;*/
+/*
+     justify-content: space-around;
+   
+    
+}
+  */
+ 
+
+h2 {
+    margin: 10px; 
+}
+
+ul {
+	list-style-type: none; 
+}
+  /*to avoid the automatic bullet points */
+
+ol {
+  list-style-type:none;
+  
+}
+
+li {
+ /*font-size: 20px;*/
+ line-height:44px;
+	
+  
+  /* Andy's example suggested: line-height: 44px; his note was: each line of text should occupy 44 pixels of height (good for mobile usage and fat fingers). It looks good in the TOC but is making the text really far apart space wise in my lists outside of the TOC and I can't seem to get around that */
+  margin: 0; 
+  padding: 0;
+}
+/* this was suggested for dealing with the list spacing issue but i'm not sure how it work....li span { 
+  line-height: 10px; 
+  display:block; }
+*/
+.concept {
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  color: black;
+}
+
+.concept-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px;
+  text-align: center;
+  color: black;
+ 
+  /*i replaced my html bold and italics tags with span tags and font style/font weight*/ 
+}
+
+.concept-description {
+    font-weight: lighter;
+    margin: 6px;
+}
+
+.italic {
+  font-style: italic; 
+}
+
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align:center;
+}
+
+/* I stole andy's code for the little code boxes for python. */
+span.code {
+    font-family: Courier;
+    background-color: #BBBBBB;
+    padding: 1px;
+    margin: 2px;
+    font-weight: bold;
+ 
+}  
+
+/* unvisited link */
+a:link {
+    color: #00CED1;
+}
+
+/* visited link */
+a:visited {
+    color: #8B008B;
+}
+a:hover {
+    color:#FF1493 
+}
+
+.TOC-box {
+  margin: 10px;
+  /*border-radius: 20px;*/
+  padding: 0px;
+  display:flex;
+  display: -webkit-box;
+  display: -moz-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
+   /* flex-direction: row;
+    flex-wrap: row-wrap;*/
+}
+
+.TOC {
+  width: 33%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
